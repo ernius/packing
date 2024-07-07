@@ -37,7 +37,20 @@ Erlang's Native Implemented Function (NIF) interface for C implementation in `ha
     * [`test_sha256/0`](https://github.com/ernius/packing/blob/master/packing.erl#L86) 
     Tests NIF mechanism and validates against crypto library.
 
-## Running
+## Local run
+
+For local run [Makefile](https://github.com/ernius/packing/blob/master/Makefile) needs next environment variables:
+
+* `ERL_C_INCLUDE_PATH` Erlang local installation path.
+* `CRYPTO_LIB` Crypto library shared object path.
+
+1. Run test.
+
+```
+make test
+```
+
+## Containerized run
 
 Containerized solution is provided to easily run the solution.
 
