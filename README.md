@@ -16,8 +16,8 @@
 ### Hashing
 
 * [`hash.c`](https://github.com/ernius/packing/blob/master/hash.c)
-Packing (sequential hashing) in C.
-    * [`hash_data_chunk`](https://github.com/ernius/packing/blob/master/hash.c#L19) procedure implements sequential hashing.
+Sequential hashing iteration in C.
+    * [`hash_data_chunk`](https://github.com/ernius/packing/blob/master/hash.c#L19) procedure implements sequential hashing interation.
     * [`hash`](https://github.com/ernius/packing/blob/master/hash.c#L92) procedure does a simple sha256 hash, just to validate library usage against erlang's crypto library.
 * [`hash_nif.c`](https://github.com/ernius/packing/blob/master/hash_nif.c) and [`hash.erl`](https://github.com/ernius/packing/blob/master/hash.erl) 
 Erlang's Native Implemented Function (NIF) interface for C implementation in `hash.c`.
