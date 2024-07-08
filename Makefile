@@ -29,11 +29,11 @@ docker_build:
 	docker build -t ${DOCKER_IMAGE} .
 
 docker_terminal: 
-	docker run -it -v .:/packing ${DOCKER_IMAGE} sh 
+	docker run -it ${DOCKER_IMAGE} sh 
 
 docker_erl:
-	docker run -it -v .:/packing ${DOCKER_IMAGE} sh -c "make console"
+	docker run -it ${DOCKER_IMAGE} sh -c "make console"
 
 docker_test:
-	docker run -it -v .:/packing ${DOCKER_IMAGE} sh -c "make test"
+	docker run -it ${DOCKER_IMAGE} sh -c "make test"
 
