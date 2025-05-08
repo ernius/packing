@@ -1,4 +1,4 @@
-# Packing task
+# Packing hash using C Nif
 
 ```
 .
